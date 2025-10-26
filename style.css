@@ -1,0 +1,116 @@
+/*HOMEPAGE*/
+
+h1, h2 {
+    color: #000000;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    color: #000000;
+    background-color: #342f2a;
+}
+
+.content{
+    text-align: justify;
+    padding: 20px;
+}
+
+.pics {                            /*Picture in homepage*/
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    float: left;              /* float image to the left */
+    margin-right: 20px;       /* space between image and text */
+    margin-bottom: 10px;      /* space below image */
+}
+
+.movie {                        /*Bullet points using a class*/
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+#footer {
+    color: rgb(0, 0, 0);
+    font-size: 80%;
+    text-align: center;
+}
+
+/*FLOAT LAYOUT FOR ALL PAGES BESIDES HOME*/
+
+body {
+    margin: 0;  /* remove default margin */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sidebar on left */
+.sidebar {
+    font-size: 12px;
+    float: left;
+    width: 180px;             /* fixed width for simplicity */
+    height: 100vh;            /* full height */
+    background-color: #756a5f;
+    padding: 20px;
+    color: black;
+}
+
+.sidebar img {
+    width: 100%;           /* make it fit the sidebar’s width */
+    border-radius: 10px;   /* optional – rounded corners */
+    margin-top: 15px;      /* space above the image */
+    border: 2px solid #333;/* optional – neat border */
+}
+
+
+/* Main content fills the rest */
+.main {
+    margin-left: 220px;       /* start right after sidebar */
+    background-color: #342f2a;
+    height: 100vh;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #333;
+    display: block;                 /* full-width block-level container */
+    width: fit-content;             /* shrink to fit links */
+    border-radius: 15px;            /* rounded corners */
+    padding: 10px 20px;
+    margin: 20px auto;              /* center above layout */
+    text-align: center;             /* center links inside navbar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* optional shadow */
+}
+
+/* Navbar links */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;            /* rounded link buttons */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #591509;
+    color: white;
+}
+
+.image {
+    display: flex;               /* put images in a row */
+    justify-content: space-around; /* space evenly across the line */
+    align-items: center;         /* vertically center them */
+    margin-top: 20px;
+}
+
+.image img {
+    width: 200px;                /* adjust size to your liking */
+    border-radius: 15px;
+    border: 2px solid #333;
+}
+
